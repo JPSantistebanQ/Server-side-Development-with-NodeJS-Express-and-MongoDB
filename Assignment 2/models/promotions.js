@@ -11,10 +11,6 @@ const promotionSchema = new Schema(
 			required: true,
 			unique: true,
 		},
-		description: {
-			type: String,
-			required: true,
-		},
 		image: {
 			type: String,
 			required: true,
@@ -27,6 +23,10 @@ const promotionSchema = new Schema(
 			type: Currency,
 			required: true,
 			min: 0,
+		},
+		description: {
+			type: String,
+			required: true,
 		},
 		featured: {
 			type: Boolean,

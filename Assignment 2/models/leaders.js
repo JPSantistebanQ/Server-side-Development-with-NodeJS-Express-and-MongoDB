@@ -8,10 +8,6 @@ const leaderSchema = new Schema(
 			required: true,
 			unique: true,
 		},
-		description: {
-			type: String,
-			required: true,
-		},
 		image: {
 			type: String,
 			required: true,
@@ -21,6 +17,10 @@ const leaderSchema = new Schema(
 			required: true,
 		},
 		abbr: {
+			type: String,
+			required: true,
+		},
+		description: {
 			type: String,
 			required: true,
 		},
